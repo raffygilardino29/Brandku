@@ -1,7 +1,10 @@
-header h1 {
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/* header h1 {
             color: aqua;
              
-}
+} */
 /* 
 a {
     text-decoration: none;
