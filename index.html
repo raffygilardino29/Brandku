@@ -1,59 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>Brandku - Landing Page</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- <style>
-        header {
-            background-color: grey;
-            border: 2px solid black;
-        }
-        header h1{
-            color: red;
-        }
-    </style> -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    <header class="flex item-center justify-between py-4 px-8">
-        <h1 class="my-6 mx-6 text-3xl font-bold underline text-sky-300-clifford>">Brandku</h1>
-        <nav>
-           <a href="">Beranda</a>
-           <a href="./fitur.html">Fitur</a>
-           <a href="">Harga</a>
+
+<body style="font-family: 'Poppins', sans-serif;" class="select-none">
+
+    <header class="flex items-center justify-between px-8 py-4">
+        <h1 class="text-3xl font-bold bg-gradient-to-r from-blue-700 to-fuchsia-700 bg-clip-text text-transparent my-6">
+            BrandKu
+        </h1>
+        <nav class="flex gap-8 font-medium">
+            <a href="index.html">Beranda</a>
+            <a href="fitur.html">Fitur</a>
+            <a href="#">Harga</a>
         </nav>
     </header>
-    <main>
-        <section>
-            <h1>Solusi Terbaik untuk bisnismu</h1>
-            <p class="detail-info">
-                Platform all-in-one untuk manajemen, pemasaran, dan pertumbuhan bisnis kecil.</p>
-            <button>Mulai gratis</button>
+
+    <main class="pb-10">
+        <section class="bg-gray-100 py-24">
+            <h1 class="text-center text-4xl font-extrabold text-slate-900 pb-3">Solusi Terbaik untuk Bisnismu</h1>
+            <p class="text-center pb-5 text-gray-500 text-lg">Platform all-in-one untuk manajemen, pemasaran, dan pertumbuhan bisnis kecil.</p>
+            <div class="text-center">
+                <button id="cta-btn" class="bg-indigo-800 text-white px-6 py-2 rounded-full font-bold hover:bg-violet-900 cursor-pointer focus:outline-3 focus:outline-offset-2 focus:outline-violet-500">
+                    Mulai Gratis
+                </button>
+                <p id="cta-feedback" class="mt-4 text-blue-600 font-medium hidden"></p>
+            </div>
         </section>
 
-        <section>
-            <h2>Mengapa Brandku?</h2>
-            <div>
-                <article>
-                    <h3>Mudah digunakan</h3>
-                    <p>Tidak perlu keahlian teknis. Setup dalam 5 menit</p>
+        <section class="py-16">
+            <h2 class="text-2xl font-bold text-center text-slate-900 mb-12">Mengapa BrandKu?</h2>
+            <div class="max-w-4xl mx-auto grid grid-cols-3 gap-10 px-6">
+                <article class="text-left">
+                    <div class="text-3xl mb-4">⚡</div>
+                    <h3 class="font-semibold text-slate-800 mb-2">Mudah Digunakan</h3>
+                    <p class="text-slate-900 text-sm leading-relaxed">Tidak perlu keahlian teknis. Setup dalam 5 menit</p>
                 </article>
-                 <article>
-                    <h3>Serba otomatis</h3>
-                    <p>otomatiskan tugas berulang dan fokus pada hal yang penting</p>
+                <article class="text-left border-l border-slate-300 pl-10">
+                    <div class="text-3xl mb-4">🤖</div>
+                    <h3 class="font-semibold text-slate-800 mb-2">Serba Otomatis</h3>
+                    <p class="text-slate-900 text-sm leading-relaxed">Otomatiskan tugas berulang dan fokus pada hal yang penting</p>
                 </article>
-                 <article>
-                    <h3>Laporan Real-time</h3>
-                    <p>Pantau performa bisnismu kapan saja dan di mana saja</p>
+                <article class="text-left border-l border-slate-300 pl-10">
+                    <div class="text-3xl mb-4">📊</div>
+                    <h3 class="font-semibold text-slate-800 mb-2">Laporan Real-Time</h3>
+                    <p class="text-slate-900 text-sm leading-relaxed">Pantau performa bisnismu kapan saja dan di mana saja</p>
                 </article>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2025 Brandku, All right reserved.</p>
+    <footer class="bg-slate-950 py-10 text-center font-medium text-md text-slate-400">
+        <p>&copy; 2026 BrandKu All rights reserved</p>
     </footer>
+
+    <script src="index.js"></script>
+
 </body>
 </html>
